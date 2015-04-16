@@ -14,10 +14,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    letter.cpp
+    letter.cpp \
+    suit.cpp \
+    dec.cpp
 
 HEADERS  += mainwindow.h \
     letter.h \
-    Dictionary.h
+    dictionary.h \
+    sad.h \
+    suit.h \
+    dec.h
 
 FORMS    += mainwindow.ui
