@@ -10,6 +10,9 @@ class Dec
 {
 public:
     Dec();
+    vector<Suit> getDeck() const;
+    void setDeck(const vector<Suit> &value);
+
 private:
     vector<Suit> deck;
 };

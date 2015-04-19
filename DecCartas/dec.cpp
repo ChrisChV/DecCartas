@@ -4,7 +4,7 @@
 
 Dec::Dec()
 {
-    for(DeckFor i = 1;i<=50;i++){
+    for(DeckFor i = 1;i<=52;i++){
         SuitPolarity polarity = 1;
         Suit suit = new Suit(i,polarity);
         deck.push_back(suit);
@@ -13,3 +13,13 @@ Dec::Dec()
         }
     }
 }
+vector<Suit> Dec::getDeck() const
+{
+    return deck;
+}
+
+void Dec::setDeck(const vector<Suit> &value)
+{
+    deck = value;
+}
+
