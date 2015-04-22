@@ -10,11 +10,15 @@ class Dec
 {
 public:
     Dec();
-    vector<Suit> getDeck() const;
-    void setDeck(const vector<Suit> &value);
+    Suit* getSuit(int,int);
+
 
 private:
-    vector<Suit> deck;
+    //vector<Suit> deck;
+    Suit *hearts[13];
+    Suit *cocos[13];
+    Suit *spades[13];
+    Suit *clovers[13];
 };
 
 #endif // DEC_H
