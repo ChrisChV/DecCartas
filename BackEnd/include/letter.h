@@ -19,3 +19,4 @@ private:
 };
 
 #endif // LETTER_H
+

@@ -15,10 +15,10 @@ public:
 
 private:
     //vector<Suit> deck;
-    Suit **hearts[13];
-    Suit **cocos[13];
-    Suit **spades[13];
-    Suit **clovers[13];
+    Suit *hearts[13];
+    Suit *cocos[13];
+    Suit *spades[13];
+    Suit *clovers[13];
 };
 
 #endif // DEC_H

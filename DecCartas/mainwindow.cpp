@@ -16,7 +16,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    if(A Corazones A == 3){
+    char cosa = 'A';
+    if(cosa Corazones cosa == 3){
         ui->label->setText("Malo");
     }
     else{

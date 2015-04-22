@@ -12,17 +12,19 @@ TARGET = DecCartas
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
+SOURCES += main.cpp\ 
+    mainwindow.cpp \
     letter.cpp \
     suit.cpp \
-    dec.cpp
+    dec.cpp \
+    sentence.cpp
 
 HEADERS  += mainwindow.h \
     letter.h \
     dictionary.h \
     sad.h \
     suit.h \
-    dec.h
+    dec.h \
+    sentence.h
 
 FORMS    += mainwindow.ui

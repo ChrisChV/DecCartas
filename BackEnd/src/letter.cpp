@@ -1,7 +1,7 @@
 #include "letter.h"
 #include "sad.h"
 #include "dictionary.h"
-
+#include <cstdlib>
 
 
 letter::letter(Dec *deck)
@@ -27,3 +27,5 @@ void letter::createLetter(OriginLetter originLetter){
             }
     }
 }
+
+

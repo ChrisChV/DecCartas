@@ -1,5 +1,6 @@
-#ifndef SAD_H
-#define SAD_H
+#ifndef SAD_H_INCLUDED
+#define SAD_H_INCLUDED
+
 #include "iostream"
 #include "string"
 
@@ -11,5 +12,4 @@ typedef char OriginLetter;
 typedef int RandomNumber;
 typedef int OriginNumber;
 
-
-#endif // SAD_H
+#endif // SAD_H_INCLUDED

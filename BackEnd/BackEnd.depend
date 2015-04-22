@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1385316878 source:c:\users\christofer\documents\deccartas\backend\main.cpp
+	<iostream>
+
+1429735808 source:c:\users\christofer\documents\deccartas\backend\src\dec.cpp
+	"Dec.h"
+	"dec.h"
+	"sad.h"
+
+1429736028 c:\users\christofer\documents\deccartas\backend\include\dec.h
+	"iostream"
+	"suit.h"
+	"Vector"
+
+1429735760 c:\users\christofer\documents\deccartas\backend\include\suit.h
+	"sad.h"
+
+1429735999 c:\users\christofer\documents\deccartas\backend\include\sad.h
+	"iostream"
+	"string"
+
+1429735930 c:\users\christofer\documents\deccartas\backend\src\sad.h
+	"iostream"
+	"string"
+
