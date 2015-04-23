@@ -1,5 +1,7 @@
 #ifndef DICTIONARY_H_INCLUDED
 #define DICTIONARY_H_INCLUDED
+#include "sad.h"
+#include <ctype.h>
 
 #define A 1
 #define B 2
@@ -31,5 +33,10 @@
 #define Cocos -
 #define Espadas *
 #define Trebol /
+
+
+static OriginNumber convertOriginLetter(OriginLetter originLetter){
+    return toupper(originLetter) - 64;
+}
 
 #endif // DICTIONARY_H_INCLUDED

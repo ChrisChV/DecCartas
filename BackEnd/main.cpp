@@ -1,9 +1,12 @@
 #include <iostream>
+#include "dictionary.h"
+
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    OriginLetter cosa = 'a';
+    cout << convertOriginLetter(cosa) << endl;
     return 0;
 }

@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1385316878 source:c:\users\christofer\documents\deccartas\backend\main.cpp
+1429758686 source:c:\users\christofer\documents\deccartas\backend\main.cpp
 	<iostream>
+	"dictionary.h"
 
 1429735808 source:c:\users\christofer\documents\deccartas\backend\src\dec.cpp
 	"Dec.h"
@@ -15,11 +16,35 @@
 1429735760 c:\users\christofer\documents\deccartas\backend\include\suit.h
 	"sad.h"
 
-1429735999 c:\users\christofer\documents\deccartas\backend\include\sad.h
+1429758058 c:\users\christofer\documents\deccartas\backend\include\sad.h
 	"iostream"
 	"string"
 
 1429735930 c:\users\christofer\documents\deccartas\backend\src\sad.h
 	"iostream"
 	"string"
+
+1429736089 source:c:\users\christofer\documents\deccartas\backend\src\letter.cpp
+	"letter.h"
+	"sad.h"
+	"dictionary.h"
+	<cstdlib>
+
+1429736036 c:\users\christofer\documents\deccartas\backend\include\letter.h
+	"sad.h"
+	"suit.h"
+	"dec.h"
+
+1429759808 c:\users\christofer\documents\deccartas\backend\include\dictionary.h
+	"sad.h"
+	<ctype.h>
+
+1429735890 source:c:\users\christofer\documents\deccartas\backend\src\sentence.cpp
+	"Sentence.h"
+
+1429735672 c:\users\christofer\documents\deccartas\backend\include\sentence.h
+	"dec.h"
+
+1429735808 source:c:\users\christofer\documents\deccartas\backend\src\suit.cpp
+	"suit.h"
 
