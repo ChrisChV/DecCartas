@@ -17,13 +17,17 @@ letter::letter(Dec *deck)
 void letter::createLetter(OriginLetter originLetter){
 
     OriginNumber originNumber = convertOriginLetter(originLetter);
-    RandomNumber randomNumber = rand() % 13;
-    RandomNumber randomPolarity = rand() % 4;
-    this->suitOperator = deck->getSuit(randomNumber, randomPolarity);
+    RandomNumber randomPolarity;
+    RandomNumber randomNumber;
+    this->suitOperator = deck->getSuit(0,13,0,4);
     switch (suitOperator->getPolarity()){
         case 0:
             if(suitOperator->getNumber() >= originNumber){
                 randomPolarity = rand() % 2;
+                switch(randomPolarity){
+                    case 0:
+                        this->suitFirstOperatorNumber = deck->getSuit(suitOperator->getNumber() - 1, originNumber, randomPolarity);
+                }
             }
     }
 }
