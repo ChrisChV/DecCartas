@@ -27,7 +27,7 @@ Dec::Dec()
     }
 }
 
-Suit * Dec::getSuitImpl(RandomNumber randomNumber, RandomNumber randomPolarity){
+Suit * Dec::getSuitImpl(RandomNumber randomNumber, RandomPolarity randomPolarity){
     Suit *suitTemporal;
     switch(randomPolarity){
         case 0:
@@ -59,27 +59,43 @@ Suit * Dec::getSuitImpl(RandomNumber randomNumber, RandomNumber randomPolarity){
             }
             break;
         default:
-            return getSuit(numberLimit1, numberLimit2, polarityLimit1, polarityLimit2);
+            return 0;
     }
-    return getSuit(numberLimit1, numberLimit2, polarityLimit1, polarityLimit2);
+    return 0;
 }
 
 Suit* Dec::getSuit(RandomNumberLimit numberLimit1, RandomNumberLimit numberLimit2, RandomNumberLimit polarityLimit1, RandomNumberLimit polarityLimit2){
     RandomNumber randomNumber = rand() % (numberLimit2 + 1) + numberLimit1;
-    RandomNumber randomPolarity = rand() % (polarityLimit2 + 1) + polarityLimit1;
-    return getSuitImpl(randomNumber, randomPolarity);
+    RandomPolarity randomPolarity = rand() % (polarityLimit2 + 1) + polarityLimit1;
+    Suit* suit = getSuitImpl(randomNumber, randomPolarity);
+    if(suit = 0){
+        suit = getSuit(numberLimit1, numberLimit2, polarityLimit1, polarityLimit2);
+    }
+    return suit;
 }
 
-Suit* Dec::getSuit(RandomNumberLimit numberLimit1, RandomNumberLimit numberLimit2, RandomNumber polarity){
+Suit* Dec::getSuit(RandomNumberLimit numberLimit1, RandomNumberLimit numberLimit2, RandomPolarity polarity){
     RandomNumber randomNumber = rand() % (numberLimit2 + 1) + numberLimit1;
-    return getSuitImpl(randomNumber, polarity);
+    Suit* suit = getSuitImpl(randomNumber, polarity);
+    if(suit = 0){
+        suit = getSuit(numberLimit1, numberLimit2, polarity);
+    }
+    return suit;
 }
 
-Suit* Dec::getSuit(RandomNumber number, RandomNumberLimit polarityLimit1, RandomNumberLimit polarityLimit2){
-    RandomNumber randomPolarity = rand() % (polarityLimit2 + 1) + polarityLimit1;
-    return getSuitImpl(number, randomPolarity);
+Suit* Dec::getSuit(RandomNumber number, RandomNumberLimit polarityLimit1, RandomNumberLimit polarityLimit2, Random random){
+    RandomPolarity randomPolarity = rand() % (polarityLimit2 + 1) + polarityLimit1;
+    Suit* suit = getSuitImpl(number, randomPolarity);
+    if(suit = 0){
+        suit = getSuit(number, polarityLimit1, polarityLimit2);
+    }
+    return suit;
 }
 
 Suit* Dec::getSuit(RandomNumber number, RandomNumber polarity){
-    return getSuitImpl(number, polarity);
+    Suit* suit = getSuitImpl(number, polarity);
+    if(suit = 0){
+        suit = getSuit(number, polarity);
+    }
+    return suit;
 }

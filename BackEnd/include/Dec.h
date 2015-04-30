@@ -12,8 +12,8 @@ class Dec
 public:
     Dec();
     Suit* getSuit(RandomNumberLimit,RandomNumberLimit,RandomNumberLimit,RandomNumberLimit);
-    Suit* getSuit(RandomNumber,RandomNumberLimit,RandomNumberLimit);
-    Suit* getSuit(RandomNumberLimit,RandomNumberLimit,RandomNumber);
+    Suit* getSuit(RandomNumber number,RandomNumberLimit polarityLimit1,RandomNumberLimit polarityLimit2, Random random);
+    Suit* getSuit(RandomNumberLimit numberLimit1, RandomNumberLimit numberLimit2, RandomPolarity polarity);
     Suit* getSuit(RandomNumber,RandomNumber);
 
 
@@ -23,7 +23,7 @@ private:
     Suit *cocos[13];
     Suit *spades[13];
     Suit *clovers[13];
-    Suit* getSuitImpl(RandomNumber,RandomNumber);
+    Suit* getSuitImpl(RandomNumber,RandomPolarity);
 };
 
 #endif // DEC_H

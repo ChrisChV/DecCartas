@@ -17,7 +17,7 @@ letter::letter(Dec *deck)
 void letter::createLetter(OriginLetter originLetter){
 
     OriginNumber originNumber = convertOriginLetter(originLetter);
-    RandomNumber randomPolarity;
+    RandomPolarity randomPolarity;
     RandomNumber randomNumber;
     this->suitOperator = deck->getSuit(0,13,0,4);
     switch (suitOperator->getPolarity()){

@@ -12,5 +12,7 @@ typedef char OriginLetter;
 typedef int RandomNumber;
 typedef int OriginNumber;
 typedef int RandomNumberLimit;
+typedef int RandomPolarity;
+typedef bool Random;
 
 #endif // SAD_H_INCLUDED
